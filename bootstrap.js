@@ -66,18 +66,6 @@
       subClass.__proto__ = superClass;
     }
   
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v4.3.1): util.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-     * --------------------------------------------------------------------------
-     */
-    /**
-     * ------------------------------------------------------------------------
-     * Private TransitionEnd Helpers
-     * ------------------------------------------------------------------------
-     */
-  
     var TRANSITION_END = 'transitionend';
     var MAX_UID = 1000000;
     var MILLISECONDS_MULTIPLIER = 1000; // Shoutout AngusCroll (https://goo.gl/pxwQGp)
@@ -2612,12 +2600,7 @@
       return Modal._jQueryInterface;
     };
   
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v4.3.1): tools/sanitizer.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-     * --------------------------------------------------------------------------
-     */
+   
     var uriAttrs = ['background', 'cite', 'href', 'itemtype', 'longdesc', 'poster', 'src', 'xlink:href'];
     var ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i;
     var DefaultWhitelist = {
@@ -2652,20 +2635,10 @@
       strong: [],
       u: [],
       ul: []
-      /**
-       * A pattern that recognizes a commonly useful subset of URLs that are safe.
-       *
-       * Shoutout to Angular 7 https://github.com/angular/angular/blob/7.2.4/packages/core/src/sanitization/url_sanitizer.ts
-       */
-  
+     
     };
     var SAFE_URL_PATTERN = /^(?:(?:https?|mailto|ftp|tel|file):|[^&:/?#]*(?:[/?#]|$))/gi;
-    /**
-     * A pattern that matches safe data URLs. Only matches image, video and audio types.
-     *
-     * Shoutout to Angular 7 https://github.com/angular/angular/blob/7.2.4/packages/core/src/sanitization/url_sanitizer.ts
-     */
-  
+    
     var DATA_URL_PATTERN = /^data:(?:image\/(?:bmp|gif|jpeg|jpg|png|tiff|webp)|video\/(?:mpeg|mp4|ogg|webm)|audio\/(?:mp3|oga|ogg|opus));base64,[a-z0-9+/]+=*$/i;
   
     function allowedAttribute(attr, allowedAttributeList) {
@@ -4393,13 +4366,6 @@
       $.fn[NAME$a] = JQUERY_NO_CONFLICT$a;
       return Toast._jQueryInterface;
     };
-  
-    /**
-     * --------------------------------------------------------------------------
-     * Bootstrap (v4.3.1): index.js
-     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-     * --------------------------------------------------------------------------
-     */
   
     (function () {
       if (typeof $ === 'undefined') {
